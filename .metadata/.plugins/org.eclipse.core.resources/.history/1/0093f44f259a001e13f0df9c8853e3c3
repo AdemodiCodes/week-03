@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class collections3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Different Collections
+		
+		// List allows duplicates
+		
+		List<String> students = new ArrayList<String>();
+		students.add("Rob");
+		students.add("Rob");
+		
+		for (String student : students) {
+			System.out.println(students);
+		}
+		
+		
+
+	}
+
+}

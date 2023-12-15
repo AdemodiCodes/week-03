@@ -1,0 +1,65 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class collections3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*Different Collections
+		*
+		* List allows duplicates
+		*
+		*maintains an index of the order as they're entered.
+		*Allows null values
+		*Common implementations: ArrayList, LinkedList, Vector.
+		*/
+		List<String> students = new ArrayList<String>();
+		students.add("Rob");
+		students.add("Rob");
+		students.add("Sam");
+		students.add(null);
+		
+		
+		for (String student : students) {
+			System.out.println(student);
+		}
+		//maintains an index of the order as they're entered.
+		System.out.println(students.get(2));
+		System.out.println(students.get(0));
+		
+		/*Set
+		* No duplicates allowed
+		*
+		*
+		*/
+		Set<String> states = new HashSet<String>();
+		states.add("Alabama");
+		states.add("Alabama");
+		
+		for (String state : states) {
+			System.out.println(state);
+		}
+		Set<String> vegetables = new HashSet<String>();
+
+		vegetables.add("Carrot");
+		System.out.println(vegetables);
+		vegetables.add("Onion");
+		System.out.println(vegetables);
+		vegetables.add("Broccoli");
+		System.out.println(vegetables);
+		vegetables.add("Asparagus");
+		System.out.println(vegetables);
+		vegetables.add("Carrot");
+		System.out.println(vegetables);
+		vegetables.add(null);
+		System.out.println(vegetables);
+		vegetables.add(null);
+		System.out.println(vegetables);
+		System.out.println("The size of our set is: " + vegetables.size());
+		
+	}
+
+}
